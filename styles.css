@@ -1,3 +1,28 @@
 body {
     background-color: #808080;
   }
+  @keyframes moveCar1 {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 100px);
+    }
+}
+.car-collection {
+    position: relative;
+    width: 50%;
+    height: 60px;
+    margin-top: 80px;
+  }
+  
+  .car {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+  }
+.car1 {
+    animation: moveCar1 5s linear infinite;
+  }
